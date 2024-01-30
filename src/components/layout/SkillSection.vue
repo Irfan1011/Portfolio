@@ -39,7 +39,6 @@ export default {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    height: 50vh;
 }
 
 .skill-container .skill-desc {

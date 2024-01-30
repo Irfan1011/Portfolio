@@ -83,7 +83,6 @@ export default {
 .project-container {
     color: white;
     text-align: center;
-    height: max-content;
 }
 
 .projects ul {
@@ -107,9 +106,9 @@ export default {
 
 .project-overlay .image-container {
     overflow: hidden;
-    width: 50vw;
+    width: 80vw;
     height: 40vh;
-    border-radius: 10%;
+    border-radius: 2rem;
     margin: 0.5rem;
 }
 
@@ -177,7 +176,7 @@ export default {
 
 @media (min-width: 40rem) {
     .project-container .image-container {
-        width: 15vw;
+        width: 30vw;
     }
 
     .project-container .projects ul {

@@ -136,12 +136,13 @@ header {
 .nav__list-items {
     display: none;
     margin: auto 0;
+    padding: 0;
     list-style: none;
 }
 
 .nav__list-item{
     text-decoration: none;
-    padding: 1rem;
+    padding: .8rem;
     color: white;
 }
 
@@ -198,7 +199,7 @@ header {
 
 @media (min-width: 40rem) {
     .nav {
-        margin: 0 3rem;
+        margin: 0 1rem;
     }
 
     .toggle-button {

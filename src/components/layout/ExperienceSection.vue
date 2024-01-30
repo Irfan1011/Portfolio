@@ -31,7 +31,7 @@ export default {
             experience: [
                 {
                     id: 1,
-                    companyName: 'Udemy',
+                    companyName: 'Udemy Online Course',
                     position: ['Frontend Web Application Course'],
                     startedMonth: 'October',
                     startedYear: 2023,
@@ -40,7 +40,8 @@ export default {
                     desc: [
                         'Relearn VueJs including Vuex, Routing, and Compotion API',
                         'Relearn CSS including Flexbox, Grid, and Sass',
-                        'Create main Vuejs course project',
+                        'Successfully created main Vuejs course project and deploy on firebase as a backend',
+                        'Successfully implemented Vuejs and CSS through the course to Portfolio project website'
                     ]
                 },
                 {
@@ -132,22 +133,22 @@ export default {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
     text-align: center;
+    height: 50rem;
 }
 
 .experiences {
     display: flex;
     justify-content: center;
     position: relative;
-    height: 22rem;
+    height: 28rem;
 }
 
 .navigation {
     display: flex;
     flex-direction: column;
     position: absolute;
-    left: 6%;
+    left: 5%;
     top: 5%;
     transition-delay: .3s !important;
 }
@@ -224,16 +225,16 @@ export default {
 }
 
 @media (min-width: 40rem) {
-    .experiences {
-        height: 20rem;
+    .experience-container {
+        height: 40rem;
     }
 
     .navigation {
-        left: 30%;
+        left: 20%;
     }
 
     .experience__item {
-        width: 35%;
+        width: 55%;
         left: 3%;
     }
 }
