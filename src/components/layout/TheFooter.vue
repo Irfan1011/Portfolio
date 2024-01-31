@@ -13,8 +13,10 @@
 <style scoped>
 .footer {
     position: relative;
-    width: 100%;
-    bottom: 0;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
 }
 
 .icons {

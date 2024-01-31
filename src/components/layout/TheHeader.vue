@@ -14,7 +14,7 @@
                 <li><a href="#about" class="nav__list-item">About</a></li>
                 <li><a href="#skills" class="nav__list-item">Skills</a></li>
                 <li><a href="#experience" class="nav__list-item">Experience</a></li>
-                <li><a href="#projects" class="nav__list-item">Porjects</a></li>
+                <li><a href="#projects" class="nav__list-item">Projects</a></li>
                 <li><a href="#contact" class="nav__list-item">Contact</a></li>
                 <li><base-button class="button"><a href="https://drive.google.com/file/d/1WxphflC3CGk4nuPHdwR-ZmFMzMgmOiuF/view" target="blank" class="nav__list-item">CV</a></base-button></li>
             </ul>
@@ -22,7 +22,7 @@
                 <li><a href="#about" class="mobile-nav__list-item">About</a></li>
                 <li><a href="#skills" class="mobile-nav__list-item">Skills</a></li>
                 <li><a href="#experience" class="mobile-nav__list-item">Experience</a></li>
-                <li><a href="#projects" class="mobile-nav__list-item">Porjects</a></li>
+                <li><a href="#projects" class="mobile-nav__list-item">Projects</a></li>
                 <li><a href="#contact" class="mobile-nav__list-item">Contact</a></li>
                 <li><a href="https://drive.google.com/file/d/1WxphflC3CGk4nuPHdwR-ZmFMzMgmOiuF/view" target="blank" class="mobile-nav__list-item">CV</a></li>
             </ul>
