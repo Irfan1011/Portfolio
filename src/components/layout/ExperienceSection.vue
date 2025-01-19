@@ -8,6 +8,8 @@
                 <button @click="setId(3)" :class="{ active: isActive(3) }"></button>
                 <button @click="setId(4)" :class="{ active: isActive(4) }"></button>
                 <button @click="setId(5)" :class="{ active: isActive(5) }"></button>
+                <button @click="setId(6)" :class="{ active: isActive(6) }"></button>
+                <button @click="setId(7)" :class="{ active: isActive(7) }"></button>
             </div>
             <div class="experience__item" v-if="getSelectedId" :class="{animated: isAnimated}" v-scrollanimation>
                 <div>
@@ -32,7 +34,37 @@ export default {
                 {
                     id: 1,
                     companyName: 'Udemy Online Course',
-                    position: ['Frontend Web Application Course'],
+                    position: ['Node Js The Complete Guide incl. MVC, REST API, GraphQL, Deno'],
+                    startedMonth: 'December',
+                    startedYear: 2024,
+                    endedMonth: 'January',
+                    endedYear: 2025,
+                    desc: [
+                        'Create MVC web application using node js and ejs',
+                        'Create and testing REST API using Postman',
+                        'Learn about 3rd party packages',
+                        'Learn about node js including SQL, No SQL, Sessions Cookies, Error Handling, and more',
+                        'Adjust code structure following 3rd party package update'
+                    ]
+                },
+                {
+                    id: 2,
+                    companyName: 'Udemy Online Course',
+                    position: ['CSS The Complete Guide incl. Flexbox, Grid, and Sass'],
+                    startedMonth: 'October',
+                    startedYear: 2024,
+                    endedMonth: 'November',
+                    endedYear: 2024,
+                    desc: [
+                        'Create responsive web design for any device',
+                        'Adding some animation into website',
+                        'Learn about CSS including flexbox, grid, and Sass'
+                    ]
+                },
+                {
+                    id: 3,
+                    companyName: 'Udemy Online Course',
+                    position: ['Vue Js The Complete Guide incl Router & Composition API'],
                     startedMonth: 'October',
                     startedYear: 2023,
                     endedMonth: 'January',
@@ -45,7 +77,7 @@ export default {
                     ]
                 },
                 {
-                    id: 2,
+                    id: 4,
                     companyName: 'PT Arutala Digital Inovasi',
                     position: ['Immersive Engineer, 3D Generalist'],
                     startedMonth: 'July',
@@ -61,7 +93,7 @@ export default {
                     ]
                 },
                 {
-                    id: 3,
+                    id: 5,
                     companyName: 'Universitas Atma Jaya Yogyakarta',
                     position: ['Software Development Project Course'],
                     startedMonth: 'February',
@@ -76,7 +108,7 @@ export default {
                     ]
                 },
                 {
-                    id: 4,
+                    id: 6,
                     companyName: 'Universitas Atma Jaya Yogyakarta',
                     position: ['Web Application Development Course'],
                     startedMonth: 'September',
@@ -91,7 +123,7 @@ export default {
                     ]
                 },
                 {
-                    id: 5,
+                    id: 7,
                     companyName: 'Universitas Atma Jaya Yogyakarta',
                     position: ['C Programming Tentor'],
                     startedMonth: 'August',
@@ -157,7 +189,7 @@ export default {
     border: .1rem solid white;
     border-radius: 1rem;
     margin: .3rem 0;
-    padding: .7rem;
+    padding: .6rem;
     background: white;
     cursor: pointer;
 }
@@ -231,6 +263,7 @@ export default {
 
     .navigation {
         left: 20%;
+        top: 3%;
     }
 
     .experience__item {

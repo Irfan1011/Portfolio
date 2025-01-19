@@ -1,7 +1,7 @@
 <template>
     <div id="contact" class="contact-container">
         <h2 v-scrollanimation>Get in touch</h2>
-        <p v-scrollanimation>I'm currently looking for a job as web developer. <br>I'd love to connect for any opportunities. Lets work togther!</p>
+        <p v-scrollanimation>I'm eager to learn more about web development. <br>Currently looking for an opportunity to become web developer.</p>
         <base-button class="button" v-scrollanimation><a href="https://mail.google.com/mail/u/0/?view=cm&fs=1&tf=1&to=irfan10112001@gmail.com" target="blank">Say Hello</a></base-button>
     </div>
 </template>

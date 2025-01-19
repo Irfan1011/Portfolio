@@ -3,11 +3,10 @@
         <img src="../../assets/Profile.jpg" alt="Profile" v-scrollanimation>
         <div class="desc" v-scrollanimation>
             <h2>{{name}} - <span :class="{'typing': isTyping}">{{job}}</span></h2>
-            <p>Graduated as bachelor's degree in Informatics.
-                Have 1 year experience in developing website application.
-                I am able to create website application from scratches to ready-to-use application.
-                Currently I am only taking training courses to practice.
-                I am interested in any opportunity to work as a web developer as well to improve my skills and learn new things.</p>
+            <p>Graduated as bachelor's degree in informatics. I have 1 year hands-on experience building and 
+                deploying web application. Have an ability to design and create web application from scratch. I 
+                have completed several projects related to website development. Currently I am interest to learn 
+                more about web application and looking for an opportunity to become web developer.</p>
         </div>
     </div>
 </template>
@@ -40,7 +39,19 @@ export default {
                     this.typing();
                 }, 2000);
             }, 2000);
-        }
+        },
+
+        // async typing() {
+        //     await new Promise(resolve => setTimeout(resolve, 2000));
+
+        //     this.isTyping = true;
+
+        //     await new Promise(resolve => setTimeout(resolve, 2000));
+
+        //     this.isTyping = false;
+        //     this.currentJobIndex = (this.currentJobIndex + 1) % this.jobs.length;
+        //     this.typing();
+        // }
     }
 }
 </script>

@@ -6,18 +6,18 @@
             <li class="skill__list-item" data-tooltip="HTML"><i class="fa-brands fa-html5"></i></li>
             <li class="skill__list-item" data-tooltip="CSS"><i class="fa-brands fa-css3-alt"></i></li>
             <li class="skill__list-item" data-tooltip="Javascript"><i class="fa-brands fa-js"></i></li>
-            <li class="skill__list-item" data-tooltip="Bootstrap"><i class="fa-brands fa-bootstrap"></i></li>
+            <li class="skill__list-item" data-tooltip="NodeJs"><i class="fa-brands fa-node-js"></i></li>
             <li class="skill__list-item" data-tooltip="VueJs"><i class="fa-brands fa-vuejs"></i></li>
         </ul>
         <ul class="skill__list-items" v-scrollanimation>
-            <li class="skill__list-item" data-tooltip="SQL"><i class="fa-solid fa-database"></i></li>
-            <li class="skill__list-item" data-tooltip="Laravel"><i class="fa-brands fa-laravel"></i></li>
+            <li class="skill__list-item" data-tooltip="SQL/NoSQL"><i class="fa-solid fa-database"></i></li>
+            <li class="skill__list-item" data-tooltip="Bootstrap"><i class="fa-brands fa-bootstrap"></i></li>
             <li class="skill__list-item" data-tooltip="PHP"><i class="fa-brands fa-php"></i></li>
+            <li class="skill__list-item" data-tooltip="Laravel"><i class="fa-brands fa-laravel"></i></li>
         </ul>
-        <p class="skill-desc" v-scrollanimation>Also i have join course to learn new skills such as react js and node js on Udemy</p>
+        <p class="skill-desc" v-scrollanimation>Also i have join course to learn new skills on Udemy</p>
         <ul class="skill__list-items" v-scrollanimation>
             <li class="skill__list-item" data-tooltip="ReactJs"><i class="fa-brands fa-react"></i></li>
-            <li class="skill__list-item" data-tooltip="NodeJs"><i class="fa-brands fa-node-js"></i></li>
         </ul>
     </div>
 </template>
@@ -62,7 +62,7 @@ export default {
     
     list-style: none;
     background: linear-gradient(130deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
-    width: 3.5rem;
+    width: 4rem;
     height: 3.5rem;
     margin: .2rem;
     border-radius: 10rem;

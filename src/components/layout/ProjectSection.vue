@@ -2,8 +2,8 @@
     <div id="projects" class="project-container">
         <h2 v-scrollanimation>Projects</h2>
         <div class="projects" v-scrollanimation>
-            <ul v-for="row in displayedProjects" :key="row">
-                <li v-for="project in row" :key="project" :class="{animated: isAnimated}">
+            <transition-group name="fade" tag="ul">
+                <li v-for="project in displayedProjects.flat()" :key="project.title" :class="{animated: isAnimated}">
                     <a :href="project.link" target="blank">
                         <div class="project-overlay">
                             <div class="image-container">
@@ -16,7 +16,7 @@
                         </div>
                     </a>
                 </li>
-            </ul>
+            </transition-group>
         </div>
         <base-button class="button" @click="showHide" v-scrollanimation>Show {{isOpen ? 'Less' : 'More'}}</base-button>
     </div>
@@ -30,6 +30,24 @@ export default {
             isAnimated: true,
             projects: [
                 {
+                    title: 'Message REST API Project Course',
+                    img: require("../../assets/Message REST API.png"),
+                    link: "https://github.com/Irfan1011/Message-Application-REST-API",
+                    desc: "Web programming project developed independently use Node Js through the course. Consists of various features such as authentication, authorization, JWT Token, and CRUD."
+                },
+                {
+                    title: 'E-Commerce Project Course',
+                    img: require("../../assets/E-Commerce MVC Course Project.png"),
+                    link: "https://github.com/Irfan1011/E-Commerce-Practice",
+                    desc: "Web programming project developed independently use Node Js and Mongoose through the course. Consists of various features such as authentication, authorization, email verification, reset password, sessions-cookies, csrf, payment method, print PDF, and more."
+                },
+                {
+                    title: 'CSS Responsive Project Course',
+                    img: require("../../assets/CSS Course.png"),
+                    link: "https://irfan1011.github.io/CSS-Responsive-Design",
+                    desc: "Web programming project developed independently use CSS through the course. Learning about responsive design, web animation, and Sass as an advenced learning."
+                },
+                {
                     title: 'Find A Coach Project Course',
                     img: require("../../assets/VueJsFindACoach.png"),
                     link: "https://vuemaincourseproject.web.app/coaches",
@@ -39,7 +57,7 @@ export default {
                     title: 'Atma Jogja Rental Project Course',
                     img: require("../../assets/AJR.png"),
                     link: "https://www.portfolioirfan.com/",
-                    desc: "Web programming project developed independently use Laravel and Bootstrap. Consists of various features such as authentication, authorization, print PDF, car rental, and more."
+                    desc: "Web programming project developed independently use Laravel and Bootstrap. Consists of various features such as multi authentication, authorization, print PDF, car rental, and more."
                 },
                 {
                     title: 'Online Reader Project Course',
@@ -63,8 +81,8 @@ export default {
     },
     computed: {
         displayedProjects() {
-            const projectsToShow = this.isOpen ? this.projects : this.projects.slice(0, 3);
             const rows = [];
+            const projectsToShow = this.isOpen ? this.projects : this.projects.slice(0, 3);
             for (let i = 0; i < projectsToShow.length; i += 3) {
                 rows.push(projectsToShow.slice(i, i + 3));
             }
@@ -87,6 +105,7 @@ export default {
 
 .projects ul {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     margin: 0;
