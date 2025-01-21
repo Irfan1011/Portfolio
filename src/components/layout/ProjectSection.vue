@@ -32,13 +32,13 @@ export default {
                 {
                     title: 'Message REST API Project Course',
                     img: require("../../assets/Message REST API.png"),
-                    link: "https://e-commerce-practice-0hvv.onrender.com/",
+                    link: "https://github.com/Irfan1011/Message-Application-REST-API",
                     desc: "Web programming project developed independently use Node Js through the course. Consists of various features such as authentication, authorization, JWT Token, and CRUD."
                 },
                 {
                     title: 'E-Commerce Project Course',
                     img: require("../../assets/E-Commerce MVC Course Project.png"),
-                    link: "https://github.com/Irfan1011/E-Commerce-Practice",
+                    link: "https://e-commerce-practice-0hvv.onrender.com/",
                     desc: "Web programming project developed independently use Node Js and Mongoose through the course. Consists of various features such as authentication, authorization, email verification, reset password, sessions-cookies, csrf, payment method, print PDF, and more."
                 },
                 {
