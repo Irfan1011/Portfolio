@@ -32,7 +32,7 @@ export default {
                 {
                     title: 'Message REST API Project Course',
                     img: require("../../assets/Message REST API.png"),
-                    link: "https://github.com/Irfan1011/Message-Application-REST-API",
+                    link: "https://e-commerce-practice-0hvv.onrender.com/",
                     desc: "Web programming project developed independently use Node Js through the course. Consists of various features such as authentication, authorization, JWT Token, and CRUD."
                 },
                 {
