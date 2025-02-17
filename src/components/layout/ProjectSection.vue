@@ -70,12 +70,6 @@ export default {
                     img: require("../../assets/Gamelan Demung VR.png"),
                     desc: "6 month internship at PT Arutala Digital Inovasi. Worked as a team. My position as 3D Generalist and Unity Engineer."
                 },
-                {
-                    title: 'First Portfolio',
-                    img: require("../../assets/First Portfolio.png"),
-                    link: "https://irfan1011.github.io/FirstPortfolio",
-                    desc: "Web Portfolio created used Bootstrap Framework in September 2023. This portfolio is used only to show how I have improved my skills as Frontend Developer."
-                },
             ]
         }
     },
